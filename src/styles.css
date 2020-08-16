@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.link-sidebar
+{
+  color: #777777;
+  font-size: 14px;
+}
+
+.card
+{
+  font-size: 12px;
+}
+
+.card-text
+{
+  color: #777777;
+}
+
+.sidebar
+{
+  display: none;
+}
+
+hr
+{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.label-search
+{
+  font-size: 12px;
+}
+
+::placeholder {
+  font-size:12px;
+}
+
+@media (min-width: 574px) 
+{
+
+  .sidebar
+  {
+    display: block;
+  }
+
+  .navbar
+  {
+    display: none;
+  }
+
+}

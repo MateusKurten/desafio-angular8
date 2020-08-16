@@ -1,0 +1,14 @@
+<h4 class="mb-4">Cadastrar Notícia</h4>
+
+<form id="add-form" (ngSubmit)="f.form.valid && saveNoticia(f)" #f="ngForm" novalidate>
+  <div class="form-group">
+    <label for="title">Título</label>
+    <input type="text" [(ngModel)]="noticia.title" id="title" name='title' #title='ngModel' required class="form-control" [ngClass]="{ 'is-invalid': f.submitted && title.invalid }" placeholder="Insira o título...">
+  </div>
+  <div class="form-group">
+    <label for="body">Corpo</label>
+    <input type="text" [(ngModel)]="noticia.body" id="body" name='body' #body='ngModel' required class="form-control" [ngClass]="{ 'is-invalid': f.submitted && body.invalid }"  placeholder="Insira o corpo...">
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+  <button routerLink="/home" routerLinkActive="active" class="btn btn-secondary ml-3">Voltar</button>
+</form>

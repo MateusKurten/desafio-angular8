@@ -1,0 +1,84 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<!-- Navbar Mobile-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Menu</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categoria
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Lorem ipsum dolor</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Lorem ipsum dolor</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Lorem ipsum dolor</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Lorem ipsum dolor</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar por..." aria-label="Search">
+      <button routerLink="/cadastro" routerLinkActive="active" class="btn btn-outline-info my-2 my-sm-0">Cadastrar Noticia</button>
+    </form>
+  </div>
+</nav>
+
+
+  <!-- Header -->
+<div class="m-5 header">
+  <h4 class="text-center">Exibindo resultado de busca por "Covid 19"</h4>
+  <p class="text-center" style="color: #777777">Encontramos um total de 20 resultados para a sua busca</p>
+</div>
+
+<div class="container" style="position: relative">
+
+  <div class="row">
+    <div class="col-lg-9 col-md-9 col-sm-9 mb-9">
+
+      <router-outlet></router-outlet>
+
+    </div>
+
+    <div id="sidebar" class="sidebar col-lg-3 col-md-3 col-sm-3 col-3 text-left" style="position:fixed; right:15px">
+      <p style="font-size: 14px"><strong>Categorias</strong></p>
+      <a href="#" class="link-sidebar">Lorem ipsum dolor</a>
+      <hr>
+      <a href="#" class="link-sidebar">Lorem ipsum dolor</a>
+      <hr>
+      <a href="#" class="link-sidebar">Lorem ipsum dolor</a>
+      <hr>
+      <a href="#" class="link-sidebar">Lorem ipsum dolor</a>
+      <hr>
+      <p class="label-search mt-4 mb-1"><strong>Procurando alguma noticia?</strong></p>
+      <form>
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar por.." aria-label="Search">
+      </form>
+      <button routerLink="/cadastro" routerLinkActive="active" class="mt-4 btn btn-outline-info">Cadastrar Notícia</button>
+    </div>
+  </div>
+
+
+</div>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
