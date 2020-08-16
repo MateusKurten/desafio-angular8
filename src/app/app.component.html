@@ -1,12 +1,3 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
 <!-- Navbar Mobile-->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -34,7 +25,7 @@
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar por..." aria-label="Search">
-      <button routerLink="/cadastro" routerLinkActive="active" class="btn btn-outline-info my-2 my-sm-0">Cadastrar Noticia</button>
+      <button routerLink="/cadastro" routerLinkActive="active" class="btn btn-outline-info my-2 my-sm-0">Cadastrar Notícia</button>
     </form>
   </div>
 </nav>
@@ -42,8 +33,8 @@
 
   <!-- Header -->
 <div class="m-5 header">
-  <h4 class="text-center">Exibindo resultado de busca por "Covid 19"</h4>
-  <p class="text-center" style="color: #777777">Encontramos um total de 20 resultados para a sua busca</p>
+  <h4 class="text-center">{{ cadastro.isActive ? 'Cadastrar Notícia' : 'Exibindo resultado de busca por \"Covid 19\"'}}</h4>
+  <p class="text-center" style="color: #777777">{{ cadastro.isActive ? '' : 'Encontramos um total de 20 resultados para a sua busca'}}</p>
 </div>
 
 <div class="container" style="position: relative">
@@ -65,20 +56,13 @@
       <hr>
       <a href="#" class="link-sidebar">Lorem ipsum dolor</a>
       <hr>
-      <p class="label-search mt-4 mb-1"><strong>Procurando alguma noticia?</strong></p>
+      <p class="label-search mt-4 mb-1"><strong>Procurando alguma notícia?</strong></p>
       <form>
         <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar por.." aria-label="Search">
       </form>
-      <button routerLink="/cadastro" routerLinkActive="active" class="mt-4 btn btn-outline-info">Cadastrar Notícia</button>
+      <button routerLink="/cadastro" routerLinkActive #cadastro="routerLinkActive" class="mt-4 btn btn-outline-info">Cadastrar Notícia</button>
     </div>
   </div>
 
 
 </div>
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
